@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultar Pessoa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+</head>
+  <script language="JavaScript">
+$(document).ready(function()
+{
+    $('[data-toggle="tooltip"]').tooltip();   
+}
+);
+</script>
+<body>
+  <div align="CENTER">
+      <h1>Sistema de Consulta</h1>
+      <p>Consulta Pessoa</p>
+<!--######################### inicio do form e div o qual o contem ##########################-->
+    <div class="container">
+      <div class="alert alert-info">
+          <form name="formContato" method="get" action="ConsultaPessoasexo.php">
+              <p>
+              <select class="btn btn-primary" name="sexo">
+                  <option value="masculino">masculino</option>
+                  <option value="feminino">feminino</option>
+              </select>
+              </p>
+        <div>
+          <input class="btn btn-primary" type="submit" name="button" id="button" value="Selecione o sexo" required>  
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form name="formContato" method="get" action="index.html">
+        <p>
+            <input type="submit" class="btn btn-success" name="button" id="button" value="Voltar para Menu">
+        </p>
+    </form>
+</div>
+</body>
+</html>
